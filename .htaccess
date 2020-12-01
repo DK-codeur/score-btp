@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+#RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ index.php?&page=$1&%{QUERY_STRING}
+
+RewriteRule ^home$ index.php?page=home
+RewriteRule ^contacts$ index.php?page=contacts
+RewriteRule ^about$ index.php?page=about
+RewriteRule ^404$ index.php?page=404
+
